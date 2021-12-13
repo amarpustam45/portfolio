@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.nav-pages,
+.nav-contact {
+  display: flex;
+  list-style: none;
+  margin: 0.4rem 1rem;
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+
+.nav-links,
+.nav-links-contact {
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav-links-contact,
+.nav-icon {
+  color: #f07605;
+}
+
+ul > li {
+  padding: 0 0.6rem;
+}
+
+.nav-links::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links-contact::after {
+  background-color: #f07605;
+}
+
+.nav-links-contact:hover::after,
+.nav-links:hover::after {
+  width: 100%;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  bottom: -3px;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links-contact.active::after {
+  background-color: #f07605;
+}

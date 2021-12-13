@@ -1,6 +1,6 @@
 import React from 'react';
 // react router
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // pages
 import Home from './Home';
 import About from './About';
@@ -13,7 +13,7 @@ const ReactRouterSetup = () => {
   return (
     <Router>
       <Navbar />
-      <Routes>
+      <Switch>
         <Route exact path='/'>
           <Home />
         </Route>
@@ -27,7 +27,7 @@ const ReactRouterSetup = () => {
         <Route path='*'>
           <Error />
         </Route>
-      </Routes>
+      </Switch>
     </Router>
   );
 };
