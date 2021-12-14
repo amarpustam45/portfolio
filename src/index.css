@@ -9,6 +9,8 @@
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   background-color: rgb(145, 143, 143);
   overflow: hidden;
