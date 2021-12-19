@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/Contact.css';
 
+toast.configure();
 const Contact = () => {
   const [emailInfo, setEmailInfo] = useState({
     userName: '',
@@ -26,11 +29,29 @@ const Contact = () => {
         e.target,
         'user_xKrhJNseTz1Ikv2c4W35i'
       )
-      .then((res) => {
-        console.log(res);
+      .then(() => {
+        toast.success('Email Sent Successfully', {
+          theme: 'dark',
+          position: 'bottom-right',
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+        });
       })
-      .catch((err) => {
-        console.log(err);
+      .catch(() => {
+        toast.error('There was an error sending Email. Please try again.', {
+          theme: 'dark',
+          position: 'bottom-right',
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       });
     setEmailInfo({
       userName: '',

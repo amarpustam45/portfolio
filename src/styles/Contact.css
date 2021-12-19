@@ -2,6 +2,7 @@
 
 .form {
   margin: auto;
+  padding: 0 4rem;
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
@@ -16,13 +17,15 @@
   animation-fill-mode: forwards;
 }
 
-.form,
-.form-control {
+.form {
   width: 100%;
+}
+.form-control {
+  width: auto;
 }
 
 .inputs {
-  width: 80%;
+  width: 100%;
 }
 
 .form-label {
@@ -38,12 +41,13 @@
 .inputs {
   display: flex;
   flex-direction: column;
-  margin-left: 5rem;
+  padding-right: 2rem;
 }
 
 input,
 textarea {
-  width: 80%;
+  color: #fff;
+  width: 100%;
   font-size: 1.3rem;
   line-height: 1.8rem;
   padding: 0.2rem 1rem;
@@ -70,11 +74,10 @@ textarea:focus {
 
 .submit-btn {
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  height: 5rem;
-  width: 40%;
+  height: auto;
+  width: auto;
   font-size: 3rem;
   text-transform: uppercase;
-  margin: auto;
 }
 
 @keyframes contact-load {
