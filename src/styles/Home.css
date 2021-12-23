@@ -22,15 +22,15 @@
 }
 
 .hello {
-  animation: hello-load 0.7s 2s;
+  animation: hello-load 0.7s 1s;
 }
 
 .about-link-container {
-  animation: hello-load 0.7s 2.8s;
+  animation: hello-load 0.7s 1.8s;
 }
 
 .home-info {
-  animation: hello-load 0.7s 3.6s;
+  animation: hello-load 0.7s 2.6s;
 }
 
 .hello,

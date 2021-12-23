@@ -18,12 +18,12 @@
 }
 
 .about-info-main {
-  animation: scale-in 0.7s 2s;
+  animation: scale-in 0.7s 1s;
 }
 
 .work-link-container,
 .contact-link-container {
-  animation: scale-in 0.7s 2.8s;
+  animation: scale-in 0.7s 1.8s;
 }
 
 .about-info-main,
