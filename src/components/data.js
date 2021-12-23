@@ -9,16 +9,18 @@ const sites = [
     id: uuidv4(),
     siteName: 'My portfolio',
     url: 'https://amar-pustam.netlify.app',
-    description: 'This is my portfolio',
-    techDesc: 'Built using react',
+    description:
+      'This is my portfolio and it is the first look at my skills as a front-end web developer.',
+    techDesc:
+      'This site was built using react, making use of hooks such as useState and useEffect.',
     image: portfolio,
   },
   {
     id: uuidv4(),
     siteName: 'Appitite Andys',
     url: 'https://restaurant-demo-amarpustam.netlify.app',
-    description: 'This is a simple demo of a restaurant menu application',
-    techDesc: 'This was built using vanilla html,css and javascript',
+    description: 'This is a simple demo of a restaurant menu application.',
+    techDesc: 'This was built using vanilla html,css and javascript.',
     image: restaurant,
   },
   {
