@@ -9,6 +9,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.hamburger {
+  display: none;
+}
+
 .nav-pages,
 .nav-contact {
   display: flex;
@@ -32,7 +36,13 @@
   color: #f07605;
 }
 
-ul > li {
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+ul > li,
+.icons > li {
   padding: 0 0.6rem;
 }
 
@@ -69,4 +79,47 @@ ul > li {
 
 .nav-links-contact.active::after {
   background-color: #f07605;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.596);
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 0;
+    font-size: 2.4rem;
+  }
+
+  .nav-pages {
+    height: 70%;
+    justify-content: space-around;
+  }
+
+  .nav-contact {
+    height: 30%;
+    justify-content: space-between;
+  }
+
+  .nav-pages,
+  .nav-contact {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .hamburger {
+    z-index: 11;
+    display: inline;
+    position: absolute;
+    color: #f07605;
+    right: 10px;
+    top: 10px;
+    font-size: 2.3rem;
+  }
 }
