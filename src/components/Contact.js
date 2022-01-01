@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <section className='home-container'>
+    <section className='contact-container'>
       <div className='banner'>contact</div>
       <form onSubmit={handleSubmit} className='form'>
         <section className='inputs'>

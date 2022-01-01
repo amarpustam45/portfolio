@@ -26,6 +26,47 @@
   animation: scale-in 0.7s 1.8s;
 }
 
+@media only screen and (max-width: 480px) {
+  .about-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .about-info {
+    margin: 2rem 0;
+    padding: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  .about-info-main {
+    margin: 2rem 0;
+  }
+
+  .work-link-container,
+  .contact-link-container {
+    flex-direction: column;
+  }
+
+  .to-work.nav-item,
+  .to-contact.nav-item {
+    -webkit-text-stroke: 1px rgba(0, 0, 0);
+  }
+
+  .about-info-main {
+    animation: scale-in 0.7s 1.5s;
+  }
+
+  .work-link-container,
+  .contact-link-container {
+    animation: scale-in 0.7s 2.3s;
+  }
+}
+
 .about-info-main,
 .work-link-container,
 .contact-link-container {
