@@ -1,16 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import '../styles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ toggle, navigationToggle }) => {
   return (
-    <section className='navcontainer'>
-      <span className='hamburger'>
-        <GiHamburgerMenu />
-      </span>
-      <nav className='navbar'>
+    <section className='nav-container'>
+      <nav className={toggle ? 'navbar active' : 'navbar'}>
         <ul className='nav-pages'>
           <li>
             <NavLink
@@ -18,17 +14,28 @@ const Navbar = () => {
               to='/'
               className='nav-links'
               activeClassName='active'
+              onClick={() => navigationToggle(false)}
             >
               home
             </NavLink>
           </li>
           <li>
-            <NavLink exact to='/about' className='nav-links'>
+            <NavLink
+              exact
+              to='/about'
+              className='nav-links'
+              onClick={() => navigationToggle(false)}
+            >
               about
             </NavLink>
           </li>
           <li>
-            <NavLink exact to='/work' className='nav-links'>
+            <NavLink
+              exact
+              to='/work'
+              className='nav-links'
+              onClick={() => navigationToggle(false)}
+            >
               my work
             </NavLink>
           </li>
@@ -39,6 +46,7 @@ const Navbar = () => {
               exact
               to='/contact'
               className='nav-links nav-links-contact'
+              onClick={() => navigationToggle(false)}
             >
               contact
             </NavLink>

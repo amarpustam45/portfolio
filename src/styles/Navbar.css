@@ -9,10 +9,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.hamburger {
-  display: none;
-}
-
 .nav-pages,
 .nav-contact {
   display: flex;
@@ -82,8 +78,16 @@ ul > li,
 }
 
 @media only screen and (max-width: 480px) {
+  .nav-container {
+    /* display: none; */
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
   .navbar {
-    background: rgba(0, 0, 0, 0.596);
+    background: rgba(0, 0, 0, 0.767);
+    backdrop-filter: blur(8px);
     z-index: 10;
     height: 100vh;
     width: 100vw;
@@ -92,6 +96,12 @@ ul > li,
     justify-content: space-around;
     padding: 50px 0;
     font-size: 2.4rem;
+    right: -100%;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .navbar.active {
+    right: 0;
   }
 
   .nav-pages {
@@ -111,15 +121,5 @@ ul > li,
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-  }
-
-  .hamburger {
-    z-index: 11;
-    display: inline;
-    position: absolute;
-    color: #f07605;
-    right: 10px;
-    top: 10px;
-    font-size: 2.3rem;
   }
 }
