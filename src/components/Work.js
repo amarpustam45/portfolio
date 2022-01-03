@@ -65,7 +65,7 @@ const Work = () => {
           <NavLink exact to='/contact' className='to-contact nav-item'>
             touch here
           </NavLink>
-          or send an email:
+          <p className='email-tag'>or send an email: </p>
           <span className='email'>amarpustam@hotmail.com</span>
         </p>
         <button className='prev' onClick={() => setIndex(index - 1)}>

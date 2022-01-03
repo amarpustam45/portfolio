@@ -156,6 +156,60 @@ article.next-slide {
   transform: translateX(100%);
 }
 
+@media only screen and (max-width: 480px) {
+  .work-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .prev,
+  .next {
+    bottom: 0;
+  }
+
+  article {
+    height: 25%;
+    width: 95%;
+    top: 50px;
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  article .card-info-container {
+    position: relative;
+    transform: translateY(0);
+  }
+
+  .call-to-action {
+    font-size: 1rem;
+    -webkit-text-stroke: 1px black;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+
+  .to-contact.nav-item {
+    width: 50%;
+    margin: auto;
+  }
+
+  .email {
+    color: #f07605;
+  }
+
+  /* .to-contact {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  } */
+}
+
 .all-content {
   opacity: 0;
   animation: work-content-load 1.5s 1s;
