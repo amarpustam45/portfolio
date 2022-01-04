@@ -172,18 +172,34 @@ article.next-slide {
   }
 
   article {
-    height: 25%;
+    height: 60vh;
     width: 95%;
     top: 50px;
   }
 
-  img {
+  .contents {
+    height: 100%;
+    width: 100%;
+  }
+
+  article img {
     object-fit: contain;
+    height: 175px;
+    top: 0;
+    position: relative;
   }
 
   article .card-info-container {
-    position: relative;
-    transform: translateY(0);
+    transition: none !important;
+    transform: none !important;
+  }
+
+  article:hover .card-info-container,
+  article:hover img {
+    transform: none !important;
+    transition: none !important;
+    filter: none;
+    opacity: 1;
   }
 
   .call-to-action {
