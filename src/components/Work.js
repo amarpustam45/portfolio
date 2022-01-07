@@ -18,7 +18,7 @@ const Work = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 10000);
+    }, 15000);
     return () => {
       clearInterval(slider);
     };

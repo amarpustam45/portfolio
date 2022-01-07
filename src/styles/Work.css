@@ -157,6 +157,10 @@ article.next-slide {
 }
 
 @media only screen and (max-width: 480px) {
+  .work-banner {
+    line-height: 2em;
+  }
+
   .work-container {
     position: absolute;
     top: 0;
@@ -187,19 +191,6 @@ article.next-slide {
     position: relative;
   }
 
-  /* article .card-info-container {
-    transition: none !important;
-    transform: none !important;
-  } */
-
-  /* article:hover .card-info-container,
-  article:hover img {
-    transform: none !important;
-    transition: none !important;
-    filter: none;
-    opacity: 1;
-  } */
-
   .site-name {
     font-size: 2em;
   }
@@ -225,17 +216,11 @@ article.next-slide {
   .email {
     color: #f07605;
   }
-
-  /* .to-contact {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-  } */
 }
 
 .all-content {
   opacity: 0;
-  animation: work-content-load 1.5s 1s;
+  animation: work-content-load 1.5s 1.5s;
   animation-fill-mode: forwards;
 }
 
