@@ -168,7 +168,7 @@ article.next-slide {
 
   .prev,
   .next {
-    bottom: 0;
+    bottom: -10px;
   }
 
   article {
@@ -184,22 +184,29 @@ article.next-slide {
 
   article img {
     object-fit: contain;
-    height: 175px;
-    top: 0;
     position: relative;
   }
 
-  article .card-info-container {
+  /* article .card-info-container {
     transition: none !important;
     transform: none !important;
-  }
+  } */
 
-  article:hover .card-info-container,
+  /* article:hover .card-info-container,
   article:hover img {
     transform: none !important;
     transition: none !important;
     filter: none;
     opacity: 1;
+  } */
+
+  .site-name {
+    font-size: 2em;
+  }
+
+  .site-desc,
+  .tech-desc {
+    font-size: 1.2em;
   }
 
   .call-to-action {
