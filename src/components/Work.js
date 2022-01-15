@@ -65,8 +65,10 @@ const Work = () => {
           <NavLink exact to='/contact' className='to-contact nav-item'>
             touch here
           </NavLink>
-          <p className='email-tag'>or send an email: </p>
-          <span className='email'>amarpustam@hotmail.com</span>
+          <div className='cta'>
+            <p className='email-tag'>or send an email: </p>
+            <span className='email'>amarpustam@hotmail.com</span>
+          </div>
         </p>
         <button className='prev' onClick={() => setIndex(index - 1)}>
           <FaAngleDoubleLeft />

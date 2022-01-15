@@ -38,7 +38,7 @@
   font-size: 1.9rem;
   text-transform: uppercase;
   font-weight: 600;
-  line-height: 2.5rem;
+  line-height: 2.4rem;
   color: #fff;
   -webkit-text-stroke: 2px black;
 }
@@ -98,6 +98,12 @@
 
 .tech-desc {
   color: #ff9c40;
+}
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 article .card-info-container {
