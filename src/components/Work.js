@@ -31,7 +31,6 @@ const Work = () => {
         <section className='main-content'>
           {workData.map((site, siteIndex) => {
             const { id, siteName, image, url, description, techDesc } = site;
-
             let position = 'next-slide';
             if (siteIndex === index) position = 'active-slide';
             if (
@@ -39,7 +38,6 @@ const Work = () => {
               (index === 0 && siteIndex === workData.length - 1)
             )
               position = 'last-slide';
-
             return (
               <article key={id} className={`card-control ${position}`}>
                 <section className='contents'>
@@ -61,7 +59,7 @@ const Work = () => {
           })}
         </section>
         <p className='call-to-action'>
-          Like what you see? Get in{' '}
+          Like what you see? Get in
           <NavLink exact to='/contact' className='to-contact nav-item'>
             touch here
           </NavLink>

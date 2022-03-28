@@ -2,7 +2,9 @@ import { v4 as uuidv4 } from 'uuid';
 import portfolio from '../images/portfolio.png';
 import restaurant from '../images/restaurant.png';
 import simpledraw from '../images/simple-draw.png';
+import foodbud from '../images/foodbud.png';
 import todo from '../images/todo.png';
+import comingSoon from '../images/comingSoon.jpg';
 
 const sites = [
   {
@@ -14,6 +16,16 @@ const sites = [
     techDesc:
       'This site was built using react, making use of hooks such as useState and useEffect.',
     image: portfolio,
+  },
+  {
+    id: uuidv4(),
+    siteName: 'Foodbud',
+    url: 'https://foodbud.netlify.app',
+    description:
+      'This website allows you to search avaliable ingedients that you have and returns reciped that contains them.',
+    techDesc:
+      'This was built using React, styled with styled-components and is powered by "edmam" api',
+    image: foodbud,
   },
   {
     id: uuidv4(),
@@ -41,6 +53,14 @@ const sites = [
       "This is a to do app build in react. it's purpose of this app is to demonstrate the basic use of react hooks",
     techDesc: 'This application was built using react.',
     image: todo,
+  },
+  {
+    id: uuidv4(),
+    siteName: 'More Coming Soon...',
+    url: 'https://amar-pustam.netlify.app',
+    description: 'More webites coming soon.',
+    techDesc: ' ',
+    image: comingSoon,
   },
 ];
 
