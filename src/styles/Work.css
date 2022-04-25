@@ -151,6 +151,10 @@ img {
   z-index: -3;
 }
 
+.up-arrow {
+  display: none;
+}
+
 article.active-slide {
   opacity: 1;
   transform: translateX(0);
@@ -195,6 +199,22 @@ article.next-slide {
   article img {
     object-fit: contain;
     position: relative;
+  }
+
+  .up-arrow {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 2rem);
+    z-index: 3;
+    transform: rotate(90deg);
+    border: none;
+    color: #f07605;
+    font-size: 2rem;
+  }
+
+  .arrow-none {
+    display: none;
   }
 
   .site-name {

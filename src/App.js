@@ -11,12 +11,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   const [navToggle, setNavToggle] = useState(false);
 
-  const test = (e) => {
-    if (e) {
-      alert('working');
-    }
-  };
-
   const navigationToggle = (e) => {
     setNavToggle(!navToggle);
     console.log(navToggle);

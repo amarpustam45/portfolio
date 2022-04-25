@@ -8,6 +8,7 @@ import { BsBoxArrowInUpRight } from 'react-icons/bs';
 const Work = () => {
   const [workData, setWorkData] = useState(data);
   const [index, setIndex] = useState(0);
+  const [mobile, setMobile] = useState('up-arrow');
 
   useEffect(() => {
     const lastIndex = workData.length - 1;
@@ -24,6 +25,14 @@ const Work = () => {
     };
   }, [index]);
 
+  const toggleMobile = () => {
+    if (mobile === 'up-arrow') {
+      setMobile('arrow-none');
+    } else {
+      setMobile('up-arrow');
+    }
+  };
+
   return (
     <section className='work-container'>
       <div className='banner work-banner'>my work</div>
@@ -39,9 +48,16 @@ const Work = () => {
             )
               position = 'last-slide';
             return (
-              <article key={id} className={`card-control ${position}`}>
+              <article
+                key={id}
+                className={`card-control ${position}`}
+                onClick={toggleMobile}
+              >
                 <section className='contents'>
                   <img src={image} alt={siteName} />
+                  <div className={mobile}>
+                    <FaAngleDoubleLeft />
+                  </div>
                   <section className='card-info-container'>
                     <p className='site-name'>{siteName}</p>
                     <p className='site-desc'>{description}</p>

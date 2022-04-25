@@ -8,9 +8,8 @@ const About = () => {
       <div className='banner about-banner'>about me</div>
       <section className='about-info'>
         <p className='about-info-main'>
-          Test I am a self taught front-end web developer. I am dedicated to
-          helping you develop the perfect solution to turn visitors to valued
-          customers.
+          I am a self taught front-end web developer. I am dedicated to helping
+          you develop the perfect solution to turn visitors to valued customers.
         </p>
         <section className='work-link-container'>
           <p>Feel free to look at</p>
