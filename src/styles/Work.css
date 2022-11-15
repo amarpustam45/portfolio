@@ -227,12 +227,18 @@ article.next-slide {
     font-size: 1.2em;
   }
 
+  .link-container {
+    gap: 5px;
+  }
+
   .call-to-action {
+    width: 90%;
+    margin: 0 auto;
     font-size: 1rem;
     -webkit-text-stroke: 1px black;
     display: flex;
     flex-direction: column;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   .to-contact.nav-item {
