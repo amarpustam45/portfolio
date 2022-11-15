@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import data from './data';
 import { NavLink } from 'react-router-dom';
-import { FaAngleDoubleRight, FaAngleDoubleLeft } from 'react-icons/fa';
+import {
+  FaAngleDoubleRight,
+  FaAngleDoubleLeft,
+  FaGithub,
+} from 'react-icons/fa';
 import '../styles/Work.css';
 import { BsBoxArrowInUpRight } from 'react-icons/bs';
 
@@ -30,7 +34,8 @@ const Work = () => {
       <section className='all-content'>
         <section className='main-content'>
           {workData.map((site, siteIndex) => {
-            const { id, siteName, image, url, description, techDesc } = site;
+            const { id, siteName, image, url, description, techDesc, giturl } =
+              site;
             let position = 'next-slide';
             if (siteIndex === index) position = 'active-slide';
             if (
@@ -46,12 +51,17 @@ const Work = () => {
                     <p className='site-name'>{siteName}</p>
                     <p className='site-desc'>{description}</p>
                     <p className='tech-desc'>{techDesc}</p>
-                    <a href={url} target='_blank' className='link-to-site'>
-                      <div className='nav-item nav-item-link'>
-                        <BsBoxArrowInUpRight className='new-tab-icon' />
-                        take me there
-                      </div>
-                    </a>
+                    <div className='link-container'>
+                      <a href={giturl} target='_blank'>
+                        <FaGithub className='nav-icon' />
+                      </a>
+                      <a href={url} target='_blank' className='link-to-site'>
+                        <div className='nav-item nav-item-link'>
+                          <BsBoxArrowInUpRight className='new-tab-icon' />
+                          take me there
+                        </div>
+                      </a>
+                    </div>
                   </section>
                 </section>
               </article>

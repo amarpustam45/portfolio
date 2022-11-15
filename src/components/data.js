@@ -17,6 +17,7 @@ const sites = [
     techDesc:
       'This is a full-stack application built using Reactjs on the front end, Nodejs and Expressjs on the backend and data is stored in a MySQL database which is hosted on AWS.',
     image: blogapp,
+    giturl: 'https://github.com/amarpustam45/blog-app-client',
   },
   {
     id: uuidv4(),
@@ -27,6 +28,7 @@ const sites = [
     techDesc:
       'This site was built using react, making use of hooks such as useState and useEffect.',
     image: portfolio,
+    giturl: 'https://github.com/amarpustam45/portfolio',
   },
   {
     id: uuidv4(),
@@ -37,6 +39,7 @@ const sites = [
     techDesc:
       'This was built using React, styled with styled-components and is powered by "edmam" api',
     image: foodbud,
+    giturl: 'https://github.com/amarpustam45/foodbud',
   },
   {
     id: uuidv4(),
@@ -45,6 +48,7 @@ const sites = [
     description: 'This is a simple demo of a restaurant menu application.',
     techDesc: 'This was built using vanilla html,css and javascript.',
     image: restaurant,
+    giturl: 'https://github.com/amarpustam45/Restaurant-Demo',
   },
   {
     id: uuidv4(),
@@ -55,6 +59,7 @@ const sites = [
     techDesc:
       'This site was build using vanilla html, css and javascript. The canvas tag was used mainly to achieve the functionality of this site.',
     image: simpledraw,
+    giturl: 'https://github.com/amarpustam45/SimpleDraw',
   },
   {
     id: uuidv4(),
@@ -64,6 +69,7 @@ const sites = [
       "This is a to do app build in react. it's purpose of this app is to demonstrate the basic use of react hooks",
     techDesc: 'This application was built using react.',
     image: todo,
+    giturl: 'https://github.com/amarpustam45/reminder-app',
   },
   {
     id: uuidv4(),
@@ -72,6 +78,7 @@ const sites = [
     description: 'More webites coming soon.',
     techDesc: ' ',
     image: comingSoon,
+    giturl: 'https://github.com/amarpustam45',
   },
 ];
 

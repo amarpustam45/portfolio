@@ -37,10 +37,10 @@
   width: 50%;
   text-align: center;
   bottom: 10px;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 600;
-  line-height: 2.4rem;
+  line-height: 2rem;
   color: #fff;
   -webkit-text-stroke: 2px black;
 }
@@ -51,14 +51,6 @@
 
 .to-contact {
   margin-right: 0.6rem;
-}
-
-.link-to-site {
-  text-decoration: none;
-  color: #fff;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 }
 
 .nav-item-link {
@@ -79,7 +71,7 @@
 .site-desc,
 .tech-desc {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .site-name {
@@ -100,6 +92,33 @@
 
 .tech-desc {
   color: #ff9c40;
+}
+
+.link-container {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  bottom: 5px;
+  right: 5px;
+}
+
+.link-container > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  font-size: 2rem;
+}
+
+.link-to-site {
+  text-decoration: none;
+  color: #fff;
+  /* position: absolute; */
+  bottom: 20px;
+  right: 20px;
 }
 
 .cta {
