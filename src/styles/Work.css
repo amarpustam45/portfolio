@@ -32,7 +32,9 @@
 
 .call-to-action {
   position: absolute;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
   text-align: center;
   bottom: 10px;
   font-size: 1.9rem;

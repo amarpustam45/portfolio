@@ -14,7 +14,7 @@ const Home = () => {
             Amar Pustam
           </NavLink>
         </div>
-        <p className='home-info'>front-end ui/ux designer</p>
+        <p className='home-info'>full-stack web developer</p>
       </section>
     </section>
   );
