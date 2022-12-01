@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import social from '../images/social.png';
 import blogapp from '../images/blogapp.png';
 import portfolio from '../images/portfolio.png';
 import restaurant from '../images/restaurant.png';
@@ -8,6 +9,17 @@ import todo from '../images/todo.png';
 import comingSoon from '../images/comingSoon.jpg';
 
 const sites = [
+  {
+    id: uuidv4(),
+    siteName: 'Social App',
+    url: 'https://amarpustam-socialapp-demo.netlify.app/',
+    description:
+      'This is a social website clone. It was built to have the basic functionality such as creating, reading, updating and deleting posts. The functionality is taken a step further from other projects by allowing users to interract through adding friends, commenting and liking posts.',
+    techDesc:
+      'This fullstack application is built using Reactjs, Nodejs and Expressjs on the backend and uses SQL to store data hosted on AWS. For testing purposes you can use test3 as the username and password to enter the site.',
+    image: social,
+    giturl: 'https://github.com/amarpustam45/social-app-client',
+  },
   {
     id: uuidv4(),
     siteName: 'Blog App',
